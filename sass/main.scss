@@ -2,8 +2,6 @@
 @import './base/common';
 @import './base/reset';
 
-
-
 @import './utils/vars';
 @import './utils/mixin';
 @import './utils/hidden';
@@ -13,6 +11,8 @@
 @import './components/container';
 @import './components/button-request';
 @import './components/section';
+@import './components/backdrop';
+@import './components/modal';
 
 
 @import './layouts/header';
@@ -20,3 +20,4 @@
 @import './layouts/definition-section';
 @import './layouts/whatwedo';
 @import './layouts/team';
+@import './layouts/customers';
