@@ -1,0 +1,59 @@
+.team {
+    background-color: var(--team-background);
+}
+
+.team-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.box {
+    background-color: var(--white);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-card {
+    padding: 30px;
+}
+
+.team-name {
+    font-family: inherit;
+    @include font (500, 16px, 1.19, 0.03em);
+    color: var(--color-main-text);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-position {
+    font-family: inherit;
+    @include font (400, 16px, 1.19, 0.03em);
+    color: var(--description-text);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.social-links-team {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.social-item-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white);
+    fill: var(--icon);
+    transition: background-color var(--transition-duration) var(--timing-function), 
+                fill var(--transition-duration) var(--timing-function);
+    &:hover,
+    &:focus {
+        background-color: var(--active-text);
+        fill: var(--white);};
+}
