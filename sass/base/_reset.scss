@@ -15,6 +15,11 @@ ol {
   list-style: none;
 }
 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 button {
   cursor: pointer;
 }

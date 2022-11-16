@@ -1,0 +1,22 @@
+.button-request {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.06em;
+    color: var(--white);
+    background-color: var(--active-text);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    position: relative;
+    transition: background-color var(--transition-duration) var(--timing-function);
+        &:hover,
+        &:focus {
+    background-color: var(--button-request-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}

@@ -1,0 +1,40 @@
+.definition-section {
+    padding-top: 94px;
+}
+
+.definition {
+    display: flex;
+    gap: 30px;}
+
+.definition .definition-list {
+    width: calc((100% - 90px)/4);
+}
+
+.feature {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-background);
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.definition-name {
+    font-family: inherit;
+    @include font (700, 14px, 1.17, 00.03em);
+    color: var(--color-main-text);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.definition-about {
+    font-family: inherit;
+    @include font (400, 14px, 1.71, 00.03em);
+    color: var(--description-text);
+}
+
+.pictures-container {
+    display: flex;
+    gap: 30px;
+}
