@@ -1,8 +1,13 @@
-.what-list {
+.whatwedo__grid {
+    display: flex;
+    gap: 30px;
+}
+
+.whatwedo__list {
     position: relative;
 }
 
-.what-item {
+.whatwedo__card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +16,9 @@
     width: 370px;
     height: 70px;
     background-color: var(--dark-background-opacity);
+}
+
+.whatwedo__title {
     color: var(--white);
     font-family: inherit;
     @include font (700, 14px, 1.14, 0.03em);

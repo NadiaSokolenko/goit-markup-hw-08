@@ -1,0 +1,125 @@
+.footer {
+    background-color: var(--dark-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}
+
+.footer__logo {
+    text-decoration: none;
+    padding: 0;
+    margin: 0, 0, 20px, 0;
+}
+
+.address {
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    @include font(400, 14px, 1.71, 0.03em);
+    color: var(--white);
+    max-width: 231px;
+    margin-top: 20px;
+    transition: color var(--transition-duration) var(--timing-function);
+        &:hover,
+        &:focus {
+        color: var(--active-text);
+        }
+} 
+
+
+.footer__link {
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    @include font(400, 14px, 1.71, 00.03em);
+    color: var(--mailto);
+    transition: color var(--transition-duration) var(--timing-function);
+        &:hover,
+        &:focus {
+         color: var(--active-text);
+        }
+}
+
+
+
+.footer__address {
+    margin-bottom: 9px;
+}
+
+
+.footer__social {
+    align-items: baseline;
+}
+
+.footer__title {
+    font-family: inherit;
+    @include font(700, 14px, 1.14, 0.03em);
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__subscribe {
+    display: block;
+    width: 570px;
+    margin-left: auto;
+}
+
+
+
+.subscribe__form {
+    display: flex;
+    justify-content: baseline;
+    gap: 12px;
+    border: none;
+}
+
+.input__email {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--dark-background);
+    transition: border var(--transition-duration) var(--timing-function);
+        &:hover,
+        &:focus {
+            border: 1px solid var(--active-text);
+            outline: none;
+        }
+}
+
+
+.subscribe__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include font(700, 16px, 1.88, 0.06em);
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin-left: auto;
+    color: var(--white);
+    background-color: var(--active-text);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--timing-function) var(--transition-duration);
+        &:hover,
+        &:focus {
+        background-color: var(--button-request-hover);
+    }
+}
+
+
+.subscribe__icon {
+    fill: currentColor;
+    margin-left: 10px;
+}

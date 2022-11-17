@@ -3,14 +3,25 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     color: var(--active-text);
 }
 
-.logo-black {
+.logo--black {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     color: var(--color-main-text);
     margin-right: 97px;
 }
 
-.logo-white {
+.logo--white {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     color: var(--white);
 }

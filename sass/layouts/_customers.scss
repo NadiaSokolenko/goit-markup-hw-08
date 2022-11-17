@@ -1,15 +1,15 @@
-.customers-container {
+.customer__grid {
     display: flex;
     gap: 30px;
     justify-content: center;
 }
 
-.customer {
+.customer__item {
     width: 170px;
     height: 92px;
 }
 
-.customer-logo {
+.customer__logo {
     display: flex;
     width: 170px;
     height: 92px;
@@ -25,12 +25,12 @@
         }        
 }
 
-.customer-link {
+.customer__link {
     fill: var(--icon);
     transition: fill var(--transition-duration) var(--timing-function);
 
-        .customer-logo:hover &,
-        .customer-logo:focus & {
+        .customer__logo:hover &,
+        .customer__logo:focus & {
             fill: var(--active-text);
         }
 }

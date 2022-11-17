@@ -2,15 +2,15 @@
     padding-top: 94px;
 }
 
-.definition {
+.definition__grid {
     display: flex;
     gap: 30px;}
 
-.definition .definition-list {
+.definition__grid .definition__item {
     width: calc((100% - 90px)/4);
 }
 
-.feature {
+.definition__logo {
     display: flex;
     width: 270px;
     height: 120px;
@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-.definition-name {
+.definition__title {
     font-family: inherit;
     @include font (700, 14px, 1.17, 00.03em);
     color: var(--color-main-text);
@@ -28,13 +28,8 @@
     margin-bottom: 10px;
 }
 
-.definition-about {
+.definition__about {
     font-family: inherit;
     @include font (400, 14px, 1.71, 00.03em);
     color: var(--description-text);
-}
-
-.pictures-container {
-    display: flex;
-    gap: 30px;
 }

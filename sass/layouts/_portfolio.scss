@@ -1,0 +1,89 @@
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.btn-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
+    margin-left: 280px;
+}
+
+.button1 {width: 73px;}
+.button2 {width: 128px;}
+.button3 {width: 145px;}
+.button4 {width: 103px;}
+.button5 {width: 130px;}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+}
+
+.portfolio-card {
+    display: block;
+    box-shadow: none;
+    transition: box-shadow var(--transition-duration) var(--timing-function);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+ 
+}
+
+
+.overlay-card {
+    width: 370;
+    height: 294;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--active-text);
+    opacity: 0.9;
+    transform: translateY(101%);
+    transition: transform var(--transition-duration) ease;
+    transition-timing-function: var(--timing-function);
+        .portfolio-card:hover & {
+        transform: translateY(0);
+    }
+}
+
+
+.text-overlay {
+    font-family: inherit;
+    @include font(400, 18px, 1.56, 0.03em);
+    color: var(--white);
+    margin: 0;
+    padding: 63px 23px;
+}
+
+.portfolio-item-box {
+    border-right: 1px solid #EEEEEE; 
+    border-bottom: 1px solid #EEEEEE; 
+    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.portfolio-title {
+    font-family: inherit;
+    @include font(700, 18px, 2, 0.06em);
+    margin-bottom: 4px;
+    color: var(--color-main-text);
+}
+
+.portfolio-about {
+    font-family: inherit;
+    @include font(400, 16px, 1.88, 0.03em);
+    color: var(--description-text);
+}
